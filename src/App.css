@@ -7,32 +7,61 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container{
+  max-width: 500px;
+  font-size: 16px;
+  box-shadow: rgba(25, 17, 184, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  min-height: 300px;
+  font-size: 18px;
+  padding-top: 18px;
+  border-radius: 15px;
+  margin: 0 auto;
+}
+.list{
+  text-align: left;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.list ul{
+  padding-left: 0;
+}
+.list ul li{
+  background-color: rgb(16, 58, 225);
   color: white;
+  padding: 5px;
+  margin-bottom: 2px;
+
+
+}
+.task-item {
+  display: flex;
+  justify-content: space-between; /* Puts the X on the far right */
+  align-items: center;
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
 }
 
-.App-link {
-  color: #61dafb;
+.delete-sign {
+  color: rgb(250, 249, 249);
+  cursor: pointer;
+  margin-left: 10px; /* Adds space between the task text and the X */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.delete-sign:hover {
+  color: rgb(124, 119, 119);
 }
+.task-item {
+  display: flex;
+  justify-content: space-between; /* Puts the icons on the far right */
+  align-items: center;
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+.edit-sign {
+  color: rgb(224, 238, 224);
+  cursor: pointer;
+  margin-left: 30px;
+  font-weight: bold;
+}
+.edit-sign:hover {
+  color: rgb(66, 66, 66);
